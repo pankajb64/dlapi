@@ -11,7 +11,8 @@ Dlapi::Application.routes.draw do
   # This route can be invoked with purchase_url(:id => product.id)
 
   # Sample resource route (maps HTTP verbs to controller actions automatically):
-  resources :resources
+  #resources :resources
+  match 'result' => 'resources#determine_result', :as => :determine_result, :via=> :post
 
   # Sample resource route with options:
   #   resources :products do
