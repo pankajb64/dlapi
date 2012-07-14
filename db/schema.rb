@@ -11,7 +11,12 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120703163945) do
+ActiveRecord::Schema.define(:version => 20120715020730) do
+
+  create_table "g50s", :force => true do |t|
+    t.string  "level"
+    t.integer "value"
+  end
 
   create_table "resources", :force => true do |t|
     t.string  "format"
