@@ -10,7 +10,7 @@ describe ResourcesController do
 	@data = { 
 	:format => "ODI",
 
-	:type => "Standard",
+	:level => "Standard",
 
 	:T1 => {
 
