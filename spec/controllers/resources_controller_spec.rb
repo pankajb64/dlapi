@@ -4,51 +4,18 @@ require 'active_support'
 
 describe ResourcesController do
 
-   before do
-	j = ActiveSupport::JSON
-
-	@data = { 
-	:format => "ODI",
-
-	:level => "Standard",
-
-	:T1 => {
-
-	   :N => 50,
-	   
-	   :suspensions => [
-	   {
-		  :wickets => 5,
-		  :score => 131,
-		  :overs_before => 23.0,
-		  :overs_after => 17.0,
-	   }
-	   ],
-	   
-	   :S => 251,
-	 },
-
-	:T2 => { 
-
-	   :N => 50,
-	   
-	   :suspensions => [
-	   {
-		 :wickets => 3,
-		 :score => 108,
-		 :overs_before => 26.0,
-		 :overs_after => 20.0,
-	   }
-	   ],
-	   
-	},
-
-
-	}
-	
-	@json = j.encode(@data)
-	
+   before (:all) do
+	@j = ActiveSupport::JSON
+	filename = File.expand_path(File.dirname(__FILE__)) + "/../json.txt"
+	f = File.open(filename, "r")
+	@json = f.readline
    end
+   
+   before (:each) do
+   
+	@data = @j.decode(@json, :symbolize_keys => true)
+   end
+   	   
    describe 'determining result from a given set of parameters' do
    
      it 'should call the methods that calculates result in Resource Model' do
