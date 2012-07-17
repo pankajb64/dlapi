@@ -15,7 +15,7 @@ describe ResourceHelper do
 
   before (:all) do
 	@j = ActiveSupport::JSON
-	filename = File.expand_path(File.dirname(__FILE__)) + "/../json.txt"
+	filename = File.expand_path(File.dirname(__FILE__)) + "/../../static/json.txt"
 	f = File.open(filename, "r")
 	@json = f.readline
   end
@@ -29,7 +29,7 @@ describe 'calculating resource from data and format' do
   
     before (:each) do
     
-      Resource.stub(:find_by_format_and_wickets_and_over).and_return(100.0)
+      Resource.stub(:find_by_format_and_wickets_and_over).and_return(mock('Resource', :resource => 100))
     end
     it 'should call the method that finds the resource by format and wickets lost and overs left in the Resource Model exactly 2n + 1 times where n is the number of suspensions' do
     
@@ -125,30 +125,30 @@ describe 'calculating resource from data and format' do
   
     before(:each) do
     
-      ResourceHelper.stub(:find_current_score_and_overs_left).and_return(200, 15.0)
+      ResourceHelper.stub(:find_current_score_and_overs_left_and_wickets_lost).and_return(200, 15.0, 2)
     end
     
-    it 'should call the method that finds the latest score of team 2 and the final number of overs left' do
+    it 'should call the method that finds the latest score of team 2 and the final number of overs left and the latest number of wickets lost' do
     
-      ResourceHelper.should_receive(:find_current_score_and_overs_left)
+      ResourceHelper.should_receive(:find_current_score_and_overs_left_and_wickets_lost)
       
       ResourceHelper.find_target(@data[:T1], @data[:T2], 250)
     end
   end
 
-  describe 'calculating latest score of team 2 and final number of overs left' do
+  describe 'calculating latest score of team 2 and final number of overs left and latest number of wickets lost' do
   
     it 'should return 0, N overs if suspensions array is empty for Team 2' do
     
       t2 = @data[:T2]
       t2[:suspensions] = []
       
-      ResourceHelper.find_current_score_and_overs_left(t2).should == [0, @data[:T2][:N]]
+      ResourceHelper.find_current_score_and_overs_left_and_wickets_lost(t2).should == [0, @data[:T2][:N], 0]
     end
     
     it 'should return the latest score of team 2 and final number of overs left is there are suspensions, overs left should be < N' do
     
-      ResourceHelper.find_current_score_and_overs_left(@data[:T2])[1].should be < @data[:T2][:N] 
+      ResourceHelper.find_current_score_and_overs_left_and_wickets_lost(@data[:T2])[1].should be < @data[:T2][:N] 
     end
   end 
   

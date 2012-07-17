@@ -10,5 +10,9 @@ def determine_result
   @result = Resource.calculate_result(@data)
   render :json => j.encode(@result)
 end
+
+def index
+
   
+end  
 end

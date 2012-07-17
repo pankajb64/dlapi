@@ -1,6 +1,6 @@
 class AddOneDayResources < ActiveRecord::Migration
 
-  filename = File.expand_path(File.dirname(__FILE__)) + "/dloneday.txt"
+  filename = File.expand_path(File.dirname(__FILE__)) + "/../../static/dloneday.txt"
   tablefile = File.open(filename, "r")
 
   RESOURCES = []

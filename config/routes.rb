@@ -13,7 +13,7 @@ Dlapi::Application.routes.draw do
   # Sample resource route (maps HTTP verbs to controller actions automatically):
   #resources :resources
   match 'result' => 'resources#determine_result', :as => :determine_result, :via=> :post
-
+  match 'home' => 'resources#index', :as => :home
   # Sample resource route with options:
   #   resources :products do
   #     member do

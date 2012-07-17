@@ -3,7 +3,7 @@ module ResourceHelper
 def self.calculate_resource(format, data)
 
   n = data[:N]
-  r = Resource.find_by_format_and_wickets_and_over(format, 0, n)
+  r = Resource.find_by_format_and_wickets_and_over(format, 0, n).resource
   
   data[:suspensions].each do |suspension|
   
@@ -11,8 +11,8 @@ def self.calculate_resource(format, data)
     overs_before = suspension[:overs_before]
     overs_after = suspension[:overs_after]
     
-    r1 = Resource.find_by_format_and_wickets_and_over(format, wickets, overs_before)
-    r2 = Resource.find_by_format_and_wickets_and_over(format, wickets, overs_after)
+    r1 = Resource.find_by_format_and_wickets_and_over(format, wickets, overs_before).resource
+    r2 = Resource.find_by_format_and_wickets_and_over(format, wickets, overs_after).resource
 
     diff = r1 - r2
     r = r - diff
@@ -66,21 +66,25 @@ end
 def self.find_target(t1, t2, par_score)
 
   target = { :type => "target"}
-  score, overs_left  = find_current_score_and_overs_left(t2)
+  score, overs_left, wickets  = find_current_score_and_overs_left_and_wickets_lost(t2)
+  if wickets == nil
+    wickets = 0
+  end  
   t = par_score + 1
   target[:runs] = (t - score).abs
   target[:overs] = overs_left
+  target[:wickets] = 10 - wickets
   
   return target
 end
 
-def self.find_current_score_and_overs_left(t2)
+def self.find_current_score_and_overs_left_and_wickets_lost(t2)
 
   if t2[:suspensions].length == 0
-    return 0, t2[:N]
+    return 0, t2[:N], 0
   else 
     suspension = t2[:suspensions][t2[:suspensions].length - 1]
-    return suspension[:score], suspension[:overs_after]
+    return suspension[:score], suspension[:overs_after], suspension[:wickets]
   end   
 end
   

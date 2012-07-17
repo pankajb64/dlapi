@@ -1,0 +1,5 @@
+Standard 245
+U19 200
+U15 200
+WInt 200
+Associate 200

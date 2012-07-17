@@ -6,7 +6,7 @@ describe Resource do
   
   before (:all) do
 	@j = ActiveSupport::JSON
-	filename = File.expand_path(File.dirname(__FILE__)) + "/../json.txt"
+	filename = File.expand_path(File.dirname(__FILE__)) + "/../../static/json.txt"
 	f = File.open(filename, "r")
 	@json = f.readline
   end

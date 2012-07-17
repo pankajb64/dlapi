@@ -1,0 +1,7 @@
+%h1 Calculator
+
+= form_tag determine_result_url, :method => :post do
+
+  %label 'json'
+  %textarea{:name => 'data'}
+  = submit_tag 'Submit'
