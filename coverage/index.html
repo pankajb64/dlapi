@@ -1,0 +1,1371 @@
+<!DOCTYPE html>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+  <head>
+    <title>Code coverage for Dlapi</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <script src='./assets/0.5.3/jquery-1.6.2.min.js' type='text/javascript'></script>
+    <script src='./assets/0.5.3/jquery.dataTables.min.js' type='text/javascript'></script>   
+    <script src='./assets/0.5.3/fancybox/jquery.fancybox-1.3.1.pack.js' type='text/javascript'></script>   
+    <script src='./assets/0.5.3/jquery.timeago.js' type='text/javascript'></script>   
+    <script src='./assets/0.5.3/jquery.url.js' type='text/javascript'></script>   
+    <script src='./assets/0.5.3/highlight.pack.js' type='text/javascript'></script>  
+    <script src='./assets/0.5.3/app.js' type='text/javascript'></script>    
+    <link href='./assets/0.5.3/stylesheet.css' media='screen, projection, print' rel='stylesheet' type='text/css'>
+    <link href='./assets/0.5.3/highlight.css' media='screen, projection, print' rel='stylesheet' type='text/css'>
+    <link href='./assets/0.5.3/fancybox/jquery.fancybox-1.3.1.css' media='screen, projection, print' rel='stylesheet' type='text/css'>
+    <link href='./assets/0.5.3/smoothness/jquery-ui-1.8.4.custom.css' media='screen, projection, print' rel='stylesheet' type='text/css'>    
+    <link rel="shortcut icon" type="image/png" href="./assets/0.5.3/favicon_green.png" />
+    <link rel="icon" type="image/png" href="./assets/0.5.3/favicon.png" />
+  </head>
+  
+  <body>
+    <div id="loading">
+      <img src="./assets/0.5.3/loading.gif" alt="loading"/>
+    </div>
+    <div id="wrapper" style="display:none;">
+      <div class="timestamp">Generated <abbr class="timeago" title="2012-07-21T03:25:11+05:30">2012-07-21T03:25:11+05:30</abbr></div>
+      <ul class="group_tabs"></ul>
+
+      <div id="content">
+        <div class="file_list_container" id="AllFiles">
+  <h2>
+    <span class="group_name">All Files</span>
+    (<span class="covered_percent"><span class="green">100.0%</span></span>
+     covered at
+     <span class="covered_strength">
+       <span class="green">
+         3.9
+       </span>
+    </span> hits/line)
+  </h2>
+  <a name="AllFiles"></a>
+  <div>
+    <b>6</b> files in total.
+    <b>74</b> relevant lines. 
+    <span class="green"><b>74</b> lines covered</span> and
+    <span class="red"><b>0</b> lines missed </span>
+  </div>
+  <table class="file_list">
+    <thead>
+      <tr>
+        <th>File</th>
+        <th>% covered</th>
+        <th>Lines</th>
+        <th>Relevant Lines</th>
+        <th>Lines covered</th>
+        <th>Lines missed</th>
+        <th>Avg. Hits / Line</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+      <tr>
+        <td class="strong"><a href="#1a505fcd07b2fd30b1697b117306298cefaa7364" class="src_link" title="app/controllers/application_controller.rb">app/controllers/application_controller.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>3</td>
+        <td>2</td>
+        <td>2</td>
+        <td>0</td>
+        <td>2.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#11a38d8b064d4fa3e0c220bb91803a337b02fde3" class="src_link" title="app/controllers/resources_controller.rb">app/controllers/resources_controller.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>18</td>
+        <td>8</td>
+        <td>8</td>
+        <td>0</td>
+        <td>4.5</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#fe3319b41dddec3984841725880cc25282b6b3fc" class="src_link" title="app/helpers/application_helper.rb">app/helpers/application_helper.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>2</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>2.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#ecfe54f5bd90a49cc0cca20960b31c5bf1aab152" class="src_link" title="app/helpers/resource_helper.rb">app/helpers/resource_helper.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>98</td>
+        <td>51</td>
+        <td>51</td>
+        <td>0</td>
+        <td>5.2</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#eedb19b2d673aed9c0c9ea1984e8e2c1191d0718" class="src_link" title="app/models/g50.rb">app/models/g50.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>3</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>2.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#74d282731cc28e6d7ddd3298941ed6bcc9d11b45" class="src_link" title="app/models/resource.rb">app/models/resource.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>16</td>
+        <td>11</td>
+        <td>11</td>
+        <td>0</td>
+        <td>7.7</td>
+      </tr>
+      
+    </tbody>
+  </table>
+</div>
+
+
+        
+          <div class="file_list_container" id="Controllers">
+  <h2>
+    <span class="group_name">Controllers</span>
+    (<span class="covered_percent"><span class="green">100.0%</span></span>
+     covered at
+     <span class="covered_strength">
+       <span class="green">
+         3.25
+       </span>
+    </span> hits/line)
+  </h2>
+  <a name="Controllers"></a>
+  <div>
+    <b>2</b> files in total.
+    <b>10</b> relevant lines. 
+    <span class="green"><b>10</b> lines covered</span> and
+    <span class="red"><b>0</b> lines missed </span>
+  </div>
+  <table class="file_list">
+    <thead>
+      <tr>
+        <th>File</th>
+        <th>% covered</th>
+        <th>Lines</th>
+        <th>Relevant Lines</th>
+        <th>Lines covered</th>
+        <th>Lines missed</th>
+        <th>Avg. Hits / Line</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+      <tr>
+        <td class="strong"><a href="#1a505fcd07b2fd30b1697b117306298cefaa7364" class="src_link" title="app/controllers/application_controller.rb">app/controllers/application_controller.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>3</td>
+        <td>2</td>
+        <td>2</td>
+        <td>0</td>
+        <td>2.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#11a38d8b064d4fa3e0c220bb91803a337b02fde3" class="src_link" title="app/controllers/resources_controller.rb">app/controllers/resources_controller.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>18</td>
+        <td>8</td>
+        <td>8</td>
+        <td>0</td>
+        <td>4.5</td>
+      </tr>
+      
+    </tbody>
+  </table>
+</div>
+
+        
+          <div class="file_list_container" id="Models">
+  <h2>
+    <span class="group_name">Models</span>
+    (<span class="covered_percent"><span class="green">100.0%</span></span>
+     covered at
+     <span class="covered_strength">
+       <span class="green">
+         4.85
+       </span>
+    </span> hits/line)
+  </h2>
+  <a name="Models"></a>
+  <div>
+    <b>2</b> files in total.
+    <b>12</b> relevant lines. 
+    <span class="green"><b>12</b> lines covered</span> and
+    <span class="red"><b>0</b> lines missed </span>
+  </div>
+  <table class="file_list">
+    <thead>
+      <tr>
+        <th>File</th>
+        <th>% covered</th>
+        <th>Lines</th>
+        <th>Relevant Lines</th>
+        <th>Lines covered</th>
+        <th>Lines missed</th>
+        <th>Avg. Hits / Line</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+      <tr>
+        <td class="strong"><a href="#eedb19b2d673aed9c0c9ea1984e8e2c1191d0718" class="src_link" title="app/models/g50.rb">app/models/g50.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>3</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>2.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#74d282731cc28e6d7ddd3298941ed6bcc9d11b45" class="src_link" title="app/models/resource.rb">app/models/resource.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>16</td>
+        <td>11</td>
+        <td>11</td>
+        <td>0</td>
+        <td>7.7</td>
+      </tr>
+      
+    </tbody>
+  </table>
+</div>
+
+        
+          <div class="file_list_container" id="Mailers">
+  <h2>
+    <span class="group_name">Mailers</span>
+    (<span class="covered_percent"><span class="green">100.0%</span></span>
+     covered at
+     <span class="covered_strength">
+       <span class="red">
+         0.0
+       </span>
+    </span> hits/line)
+  </h2>
+  <a name="Mailers"></a>
+  <div>
+    <b>0</b> files in total.
+    <b>0.0</b> relevant lines. 
+    <span class="green"><b>0.0</b> lines covered</span> and
+    <span class="red"><b>0.0</b> lines missed </span>
+  </div>
+  <table class="file_list">
+    <thead>
+      <tr>
+        <th>File</th>
+        <th>% covered</th>
+        <th>Lines</th>
+        <th>Relevant Lines</th>
+        <th>Lines covered</th>
+        <th>Lines missed</th>
+        <th>Avg. Hits / Line</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+    </tbody>
+  </table>
+</div>
+
+        
+          <div class="file_list_container" id="Helpers">
+  <h2>
+    <span class="group_name">Helpers</span>
+    (<span class="covered_percent"><span class="green">100.0%</span></span>
+     covered at
+     <span class="covered_strength">
+       <span class="green">
+         3.6
+       </span>
+    </span> hits/line)
+  </h2>
+  <a name="Helpers"></a>
+  <div>
+    <b>2</b> files in total.
+    <b>52</b> relevant lines. 
+    <span class="green"><b>52</b> lines covered</span> and
+    <span class="red"><b>0</b> lines missed </span>
+  </div>
+  <table class="file_list">
+    <thead>
+      <tr>
+        <th>File</th>
+        <th>% covered</th>
+        <th>Lines</th>
+        <th>Relevant Lines</th>
+        <th>Lines covered</th>
+        <th>Lines missed</th>
+        <th>Avg. Hits / Line</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+      <tr>
+        <td class="strong"><a href="#fe3319b41dddec3984841725880cc25282b6b3fc" class="src_link" title="app/helpers/application_helper.rb">app/helpers/application_helper.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>2</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>2.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#ecfe54f5bd90a49cc0cca20960b31c5bf1aab152" class="src_link" title="app/helpers/resource_helper.rb">app/helpers/resource_helper.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>98</td>
+        <td>51</td>
+        <td>51</td>
+        <td>0</td>
+        <td>5.2</td>
+      </tr>
+      
+    </tbody>
+  </table>
+</div>
+
+        
+          <div class="file_list_container" id="Libraries">
+  <h2>
+    <span class="group_name">Libraries</span>
+    (<span class="covered_percent"><span class="green">100.0%</span></span>
+     covered at
+     <span class="covered_strength">
+       <span class="red">
+         0.0
+       </span>
+    </span> hits/line)
+  </h2>
+  <a name="Libraries"></a>
+  <div>
+    <b>0</b> files in total.
+    <b>0.0</b> relevant lines. 
+    <span class="green"><b>0.0</b> lines covered</span> and
+    <span class="red"><b>0.0</b> lines missed </span>
+  </div>
+  <table class="file_list">
+    <thead>
+      <tr>
+        <th>File</th>
+        <th>% covered</th>
+        <th>Lines</th>
+        <th>Relevant Lines</th>
+        <th>Lines covered</th>
+        <th>Lines missed</th>
+        <th>Avg. Hits / Line</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+    </tbody>
+  </table>
+</div>
+
+        
+          <div class="file_list_container" id="Plugins">
+  <h2>
+    <span class="group_name">Plugins</span>
+    (<span class="covered_percent"><span class="green">100.0%</span></span>
+     covered at
+     <span class="covered_strength">
+       <span class="red">
+         0.0
+       </span>
+    </span> hits/line)
+  </h2>
+  <a name="Plugins"></a>
+  <div>
+    <b>0</b> files in total.
+    <b>0.0</b> relevant lines. 
+    <span class="green"><b>0.0</b> lines covered</span> and
+    <span class="red"><b>0.0</b> lines missed </span>
+  </div>
+  <table class="file_list">
+    <thead>
+      <tr>
+        <th>File</th>
+        <th>% covered</th>
+        <th>Lines</th>
+        <th>Relevant Lines</th>
+        <th>Lines covered</th>
+        <th>Lines missed</th>
+        <th>Avg. Hits / Line</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+    </tbody>
+  </table>
+</div>
+
+        
+      </div>
+    
+      <div id="footer">
+        Generated by <a href="http://github.com/colszowka/simplecov">simplecov</a> v0.6.4 
+        and simplecov-html v0.5.3<br/>
+        using Cucumber Features, RSpec
+      </div>
+    
+      <div class="source_files">
+      
+        <div class="source_table" id="1a505fcd07b2fd30b1697b117306298cefaa7364">
+  <div class="header">
+    <h3>app/controllers/application_controller.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>2</b> relevant lines. 
+      <span class="green"><b>2</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="2" data-linenumber="1">
+          <span class="hits">2</span>
+          
+          <code class="ruby">class ApplicationController &lt; ActionController::Base</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="2">
+          <span class="hits">2</span>
+          
+          <code class="ruby">  protect_from_forgery</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="3">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="11a38d8b064d4fa3e0c220bb91803a337b02fde3">
+  <div class="header">
+    <h3>app/controllers/resources_controller.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>8</b> relevant lines. 
+      <span class="green"><b>8</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="2" data-linenumber="1">
+          <span class="hits">2</span>
+          
+          <code class="ruby">require 'active_support'</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="3">
+          <span class="hits">2</span>
+          
+          <code class="ruby">class ResourcesController &lt; ApplicationController</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="4">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="5">
+          <span class="hits">2</span>
+          
+          <code class="ruby">def determine_result</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="6">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="7" data-linenumber="7">
+          <span class="hits">7</span>
+          
+          <code class="ruby">  j = ActiveSupport::JSON</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="8">
+          
+          
+          <code class="ruby">  </code>
+        </li>
+      
+        <li class="covered" data-hits="7" data-linenumber="9">
+          <span class="hits">7</span>
+          
+          <code class="ruby">  @data = j.decode(params[:data], :symbolize_keys =&gt; true)</code>
+        </li>
+      
+        <li class="covered" data-hits="7" data-linenumber="10">
+          <span class="hits">7</span>
+          
+          <code class="ruby">  @result = Resource.calculate_result(@data)</code>
+        </li>
+      
+        <li class="covered" data-hits="7" data-linenumber="11">
+          <span class="hits">7</span>
+          
+          <code class="ruby">  render :json =&gt; j.encode(@result)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="12">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="13">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="14">
+          <span class="hits">2</span>
+          
+          <code class="ruby">def index</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="15">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="16">
+          
+          
+          <code class="ruby">  </code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="17">
+          
+          
+          <code class="ruby">end  </code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="18">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="fe3319b41dddec3984841725880cc25282b6b3fc">
+  <div class="header">
+    <h3>app/helpers/application_helper.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>1</b> relevant lines. 
+      <span class="green"><b>1</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="2" data-linenumber="1">
+          <span class="hits">2</span>
+          
+          <code class="ruby">module ApplicationHelper</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="ecfe54f5bd90a49cc0cca20960b31c5bf1aab152">
+  <div class="header">
+    <h3>app/helpers/resource_helper.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>51</b> relevant lines. 
+      <span class="green"><b>51</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="2" data-linenumber="1">
+          <span class="hits">2</span>
+          
+          <code class="ruby">module ResourceHelper</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="3">
+          <span class="hits">2</span>
+          
+          <code class="ruby">def self.calculate_resource(format, data)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="4">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="11" data-linenumber="5">
+          <span class="hits">11</span>
+          
+          <code class="ruby">  n = data[:N]</code>
+        </li>
+      
+        <li class="covered" data-hits="11" data-linenumber="6">
+          <span class="hits">11</span>
+          
+          <code class="ruby">  r = Resource.find_by_format_and_wickets_and_over(format, 0, n).resource</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="7">
+          
+          
+          <code class="ruby">  </code>
+        </li>
+      
+        <li class="covered" data-hits="11" data-linenumber="8">
+          <span class="hits">11</span>
+          
+          <code class="ruby">  data[:suspensions].each do |suspension|</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="9">
+          
+          
+          <code class="ruby">  </code>
+        </li>
+      
+        <li class="covered" data-hits="11" data-linenumber="10">
+          <span class="hits">11</span>
+          
+          <code class="ruby">    wickets = suspension[:wickets]</code>
+        </li>
+      
+        <li class="covered" data-hits="11" data-linenumber="11">
+          <span class="hits">11</span>
+          
+          <code class="ruby">    overs_before = suspension[:overs_before]</code>
+        </li>
+      
+        <li class="covered" data-hits="11" data-linenumber="12">
+          <span class="hits">11</span>
+          
+          <code class="ruby">    overs_after = suspension[:overs_after]</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="13">
+          
+          
+          <code class="ruby">    </code>
+        </li>
+      
+        <li class="covered" data-hits="11" data-linenumber="14">
+          <span class="hits">11</span>
+          
+          <code class="ruby">    r1 = Resource.find_by_format_and_wickets_and_over(format, wickets, overs_before).resource</code>
+        </li>
+      
+        <li class="covered" data-hits="11" data-linenumber="15">
+          <span class="hits">11</span>
+          
+          <code class="ruby">    r2 = Resource.find_by_format_and_wickets_and_over(format, wickets, overs_after).resource</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="16">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="11" data-linenumber="17">
+          <span class="hits">11</span>
+          
+          <code class="ruby">    diff = r1 - r2</code>
+        </li>
+      
+        <li class="covered" data-hits="11" data-linenumber="18">
+          <span class="hits">11</span>
+          
+          <code class="ruby">    r = r - diff</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="19">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="20">
+          
+          
+          <code class="ruby">  </code>
+        </li>
+      
+        <li class="covered" data-hits="11" data-linenumber="21">
+          <span class="hits">11</span>
+          
+          <code class="ruby">  return r</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="22">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="23">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="24">
+          <span class="hits">2</span>
+          
+          <code class="ruby">def self.determine_result(t1, t2, par_score)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="25">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="7" data-linenumber="26">
+          <span class="hits">7</span>
+          
+          <code class="ruby">  if (t2[:S] != nil &amp;&amp; t2[:S] != -1)</code>
+        </li>
+      
+        <li class="covered" data-hits="4" data-linenumber="27">
+          <span class="hits">4</span>
+          
+          <code class="ruby">    result = find_result(t1, t2, par_score)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="28">
+          
+          
+          <code class="ruby">  else</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="29">
+          <span class="hits">3</span>
+          
+          <code class="ruby">    result = find_target(t1, t2, par_score)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="30">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="31">
+          
+          
+          <code class="ruby">  </code>
+        </li>
+      
+        <li class="covered" data-hits="7" data-linenumber="32">
+          <span class="hits">7</span>
+          
+          <code class="ruby">  return result    </code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="33">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="34">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="35">
+          <span class="hits">2</span>
+          
+          <code class="ruby">def self.calculate_par_score(r1, r2, s, g50)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="36">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="8" data-linenumber="37">
+          <span class="hits">8</span>
+          
+          <code class="ruby">  if r1 &gt;= r2</code>
+        </li>
+      
+        <li class="covered" data-hits="7" data-linenumber="38">
+          <span class="hits">7</span>
+          
+          <code class="ruby">    score = (r2/r1) * s</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="39">
+          
+          
+          <code class="ruby">  else</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="40">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    score = s + ((r2 - r1) * g50 )/ 100</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="41">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="42">
+          
+          
+          <code class="ruby">  </code>
+        </li>
+      
+        <li class="covered" data-hits="8" data-linenumber="43">
+          <span class="hits">8</span>
+          
+          <code class="ruby">  return score.to_i    </code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="44">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="45">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="46">
+          <span class="hits">2</span>
+          
+          <code class="ruby">def self.find_result(t1, t2, par_score)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="47">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="6" data-linenumber="48">
+          <span class="hits">6</span>
+          
+          <code class="ruby">  result = { :type =&gt; &quot;result&quot; }</code>
+        </li>
+      
+        <li class="covered" data-hits="6" data-linenumber="49">
+          <span class="hits">6</span>
+          
+          <code class="ruby">  s = t2[:S]</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="50">
+          
+          
+          <code class="ruby">  </code>
+        </li>
+      
+        <li class="covered" data-hits="6" data-linenumber="51">
+          <span class="hits">6</span>
+          
+          <code class="ruby">  if ( par_score == s)</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="52">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    result[:status] = &quot;Tie&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="53">
+          
+          
+          <code class="ruby">  else</code>
+        </li>
+      
+        <li class="covered" data-hits="4" data-linenumber="54">
+          <span class="hits">4</span>
+          
+          <code class="ruby">    result[:margin] = (par_score - s).abs  </code>
+        </li>
+      
+        <li class="covered" data-hits="4" data-linenumber="55">
+          <span class="hits">4</span>
+          
+          <code class="ruby">    if ( par_score &gt; s)</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="56">
+          <span class="hits">2</span>
+          
+          <code class="ruby">      result[:status] = &quot;T1&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="57">
+          
+          
+          <code class="ruby">    else</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="58">
+          <span class="hits">2</span>
+          
+          <code class="ruby">      result[:status] = &quot;T2&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="59">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="60">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="61">
+          
+          
+          <code class="ruby">  </code>
+        </li>
+      
+        <li class="covered" data-hits="6" data-linenumber="62">
+          <span class="hits">6</span>
+          
+          <code class="ruby">  return result      </code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="63">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="64">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="65">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="66">
+          <span class="hits">2</span>
+          
+          <code class="ruby">def self.find_target(t1, t2, par_score)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="67">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="68">
+          <span class="hits">3</span>
+          
+          <code class="ruby">  target = { :type =&gt; &quot;target&quot;}</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="69">
+          <span class="hits">3</span>
+          
+          <code class="ruby">  score, overs_left, wickets  = find_current_score_and_overs_left_and_wickets_lost(t2)</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="70">
+          <span class="hits">3</span>
+          
+          <code class="ruby">  if wickets == nil</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="71">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    wickets = 0</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="72">
+          
+          
+          <code class="ruby">  end  </code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="73">
+          <span class="hits">3</span>
+          
+          <code class="ruby">  t = par_score + 1</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="74">
+          <span class="hits">3</span>
+          
+          <code class="ruby">  target[:runs] = (t - score).abs</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="75">
+          <span class="hits">3</span>
+          
+          <code class="ruby">  target[:overs] = overs_left</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="76">
+          <span class="hits">3</span>
+          
+          <code class="ruby">  target[:wickets] = 10 - wickets</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="77">
+          
+          
+          <code class="ruby">  </code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="78">
+          <span class="hits">3</span>
+          
+          <code class="ruby">  return target</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="79">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="80">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="81">
+          <span class="hits">2</span>
+          
+          <code class="ruby">def self.find_current_score_and_overs_left_and_wickets_lost(t2)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="82">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="4" data-linenumber="83">
+          <span class="hits">4</span>
+          
+          <code class="ruby">  if t2[:suspensions].length == 0</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="84">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    return 0, t2[:N], 0</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="85">
+          
+          
+          <code class="ruby">  else </code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="86">
+          <span class="hits">3</span>
+          
+          <code class="ruby">    max = t2[:suspensions][0]</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="87">
+          <span class="hits">3</span>
+          
+          <code class="ruby">    t2[:suspensions].each do |suspension|</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="88">
+          <span class="hits">3</span>
+          
+          <code class="ruby">      if suspension[:overs_after] &gt;= max[:overs_after] </code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="89">
+          <span class="hits">3</span>
+          
+          <code class="ruby">        max = suspension</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="90">
+          
+          
+          <code class="ruby">      end  </code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="91">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="92">
+          
+          
+          <code class="ruby">    #suspension = t2[:suspensions][t2[:suspensions].length - 1]</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="93">
+          <span class="hits">3</span>
+          
+          <code class="ruby">    return max[:score], max[:overs_after], max[:wickets]</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="94">
+          
+          
+          <code class="ruby">  end   </code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="95">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="96">
+          
+          
+          <code class="ruby">  </code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="97">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="98">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="eedb19b2d673aed9c0c9ea1984e8e2c1191d0718">
+  <div class="header">
+    <h3>app/models/g50.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>1</b> relevant lines. 
+      <span class="green"><b>1</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="2" data-linenumber="1">
+          <span class="hits">2</span>
+          
+          <code class="ruby">class G50 &lt; ActiveRecord::Base</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="3">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="74d282731cc28e6d7ddd3298941ed6bcc9d11b45">
+  <div class="header">
+    <h3>app/models/resource.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>11</b> relevant lines. 
+      <span class="green"><b>11</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="2" data-linenumber="1">
+          <span class="hits">2</span>
+          
+          <code class="ruby">class Resource &lt; ActiveRecord::Base</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="3">
+          <span class="hits">2</span>
+          
+          <code class="ruby">def self.calculate_result(data)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="4">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="9" data-linenumber="5">
+          <span class="hits">9</span>
+          
+          <code class="ruby">  format = data[:format]</code>
+        </li>
+      
+        <li class="covered" data-hits="9" data-linenumber="6">
+          <span class="hits">9</span>
+          
+          <code class="ruby">  level = data[:level]</code>
+        </li>
+      
+        <li class="covered" data-hits="9" data-linenumber="7">
+          <span class="hits">9</span>
+          
+          <code class="ruby">  s = data[:T1][:S]</code>
+        </li>
+      
+        <li class="covered" data-hits="9" data-linenumber="8">
+          <span class="hits">9</span>
+          
+          <code class="ruby">  r1 = ResourceHelper.calculate_resource(format, data[:T1])</code>
+        </li>
+      
+        <li class="covered" data-hits="9" data-linenumber="9">
+          <span class="hits">9</span>
+          
+          <code class="ruby">  r2 = ResourceHelper.calculate_resource(format, data[:T2])</code>
+        </li>
+      
+        <li class="covered" data-hits="9" data-linenumber="10">
+          <span class="hits">9</span>
+          
+          <code class="ruby">  g50 = G50.find_by_level(level).value</code>
+        </li>
+      
+        <li class="covered" data-hits="9" data-linenumber="11">
+          <span class="hits">9</span>
+          
+          <code class="ruby">  par_score = ResourceHelper.calculate_par_score(r1, r2, s, g50)</code>
+        </li>
+      
+        <li class="covered" data-hits="9" data-linenumber="12">
+          <span class="hits">9</span>
+          
+          <code class="ruby">  result = ResourceHelper.determine_result(data[:T1], data[:T2], par_score)</code>
+        </li>
+      
+        <li class="covered" data-hits="9" data-linenumber="13">
+          <span class="hits">9</span>
+          
+          <code class="ruby">  return result</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="14">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="15">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="16">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+      </div>
+    </div>
+  </body>
+</html>

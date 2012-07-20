@@ -57,7 +57,7 @@ Feature: determine result from given parameters
    | "wickets" |
    | "overs" |            
 
-  Scenario: determine result should give victory to Team 1 if supplied if Team 2 scored more in terms of D/L
+  Scenario: determine result should give victory to Team 2 if supplied if Team 2 scored more in terms of D/L
   
    When I am on the home page
    And I fill "data" with "{"format":"ODI","level":"Standard","T1":{"N":50,"suspensions":[{"wickets":5,"score":131,"overs_before":23.0,"overs_after":17.0}],"S":251},"T2":{"N":50,"suspensions":[{"wickets":3,"score":108,"overs_before":26.0,"overs_after":20.0}], "S" : 244}}"

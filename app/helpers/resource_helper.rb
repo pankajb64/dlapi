@@ -23,7 +23,7 @@ end
 
 def self.determine_result(t1, t2, par_score)
 
-  if (t2[:S] != nil)
+  if (t2[:S] != nil && t2[:S] != -1)
     result = find_result(t1, t2, par_score)
   else
     result = find_target(t1, t2, par_score)
@@ -83,9 +83,16 @@ def self.find_current_score_and_overs_left_and_wickets_lost(t2)
   if t2[:suspensions].length == 0
     return 0, t2[:N], 0
   else 
-    suspension = t2[:suspensions][t2[:suspensions].length - 1]
-    return suspension[:score], suspension[:overs_after], suspension[:wickets]
+    max = t2[:suspensions][0]
+    t2[:suspensions].each do |suspension|
+      if suspension[:overs_after] >= max[:overs_after] 
+        max = suspension
+      end  
+    end
+    #suspension = t2[:suspensions][t2[:suspensions].length - 1]
+    return max[:score], max[:overs_after], max[:wickets]
   end   
 end
   
 end
+
